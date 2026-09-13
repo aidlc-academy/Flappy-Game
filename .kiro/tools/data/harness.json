@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "distribution": "kiro-ide",
+  "productName": "Kiro IDE",
+  "configNextStep": "open this project in Kiro IDE, then run `/aidlc --doctor`",
+  "name": "kiro-ide",
+  "harnessDir": ".kiro",
+  "rulesSubdir": "steering",
+  "providers": {
+    "schemaVersion": 1,
+    "provider": "amazon-bedrock",
+    "region": "us-east-1",
+    "pendingActions": [
+      {
+        "id": "bedrock-model-access",
+        "status": "done"
+      },
+      {
+        "id": "kiro-ide-chat-model",
+        "status": "done"
+      }
+    ]
+  }
+}
